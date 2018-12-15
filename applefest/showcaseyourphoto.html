@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Showcase Your Photo</title>
+  <link href="styles/v1.css" type="text/css" rel="stylesheet" />
+  <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="scripts/validate.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Showcase your Instagram photo on our site!</h1>
+  </div>
+
+  <form id="showcaseyourphoto" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+    <div> <!-- Instagram handle -->
+      <label for="handle">Instagram handle: </label>
+      <input type="text" id="handle" name="Handle" placeholder="@yourhandle"
+      required maxlength="30" pattern="@[a-z0-9._-]+" class="empty-input" />
+      <p id="handle-error" class="hidden">
+        REQUIRED: Valid Instagram account name, including the '@'.
+      </p>
+    </div>
+    <div> <!-- Instagram photo link -->
+      <label for="photolink">Link to Instagram photo: </label>
+      <input type="url" id="photolink" name="Link" placeholder="https://..."
+      required pattern="https?://www.instagram.com/.+" class="empty-input" />
+      <p id="link-error" class="hidden">
+        REQUIRED: Valid link to your Instagram photo, starting "https://www.instagram.com/".
+      </p>
+    </div>
+    <div> <!-- Upload photo file -->
+      <label for="upload">Upload your photo: </label>
+      <input type="file" id="upload" name="File" class="empty-input" />
+      <p id="upload-private-req">REQUIRED if you have a <strong>private</strong> Instagram.</p>
+    </div>
+    <div> <!-- Consent to photo screenshot or file -->
+      <p class="consentmessage">If you don't upload the photo file, do you consent to posting a
+      <strong>screenshot</strong> of the image in the link you provided?</p>
+      <label class="consentlabel" for="upload-consent">Yes, I consent.</label>
+      <input type="checkbox" id="upload-consent" name="Photo-consent" required />
+      <p id="upload-consent-error" class="hidden">
+        REQUIRED to showcase your Instagram photo.
+      </p>
+    </div>
+    <div> <!-- Consent to submission use -->
+      <p class="consentmessage">Do you consent to use of your Instagram <strong>handle</strong> for
+      photo credits and your uploaded or screenshotted <strong>photo</strong>
+      on this site, linking to the <strong>link</strong> you provided?</p>
+      <label class="consentlabel" for="use-consent">Yes, I consent.</label>
+      <input type="checkbox" id="use-consent" name="Use-Consent" required />
+      <p id="use-consent-error" class="hidden">
+        REQUIRED to showcase your Instagram photo.
+      </p>
+    </div>
+    <button type="submit" class="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>

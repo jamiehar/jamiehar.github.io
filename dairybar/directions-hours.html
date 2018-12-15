@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cornell Dairy Bar</title>
+  <link href="styles/all.css" type="text/css" rel="stylesheet" />
+  <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="scripts/operation_hours.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html"><h1>Cornell Dairy Bar</h1></a>
+    <div class="nav">
+      <div id="nav-home">
+        <a href="index.html">Home</a>
+      </div>
+      <div>
+        <a href="flavors.html">Flavors</a>
+        <a href="foodnmerch.html">Food & Merch</a>
+      </div>
+      <div>
+        <a href="directions-hours.html">Directions & Hours</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>Directions & Hours</h2>
+  <div class="flex-row">
+    <div id="directions-map">
+      <a href="https://www.google.com/maps/place/Cornell+Dairy+Bar/@42.4471489,-76.4729911,17z/data=!3m1!4b1!4m5!3m4!1s0x89d081f7c52ad10f:0x8ad6989773b2125!8m2!3d42.447145!4d-76.4707971" target="_blank"><img src="images/map.jpg" alt="Dairy Bar map" id="map"/></a>
+      <!--Source:https://www.google.com/maps/place/Cornell+Dairy+Bar/@42.4471489,-76.4729911,17z/data=!3m1!4b1!4m5!3m4!1s0x89d081f7c52ad10f:0x8ad6989773b2125!8m2!3d42.447145!4d-76.4707971-->
+    </div>
+    <div id="directions-text">
+      <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/Cornell+Dairy+Bar/@42.4471489,-76.4729911,17z/data=!3m1!4b1!4m5!3m4!1s0x89d081f7c52ad10f:0x8ad6989773b2125!8m2!3d42.447145!4d-76.4707971" target="_blank">411 Tower Road, Ithaca NY 14853</a></p>
+      <p id="bus-routes">Bus Routes</p>
+      <p>Explore each route number's detailed schedule and map.</p>
+      <p><a href="https://tcatbus.com/route51/" target="_blank">Route 51</a>: Eastern Hights - Cornell - Commons</p>
+      <p><a href="https://tcatbus.com/route75/" target="_blank">Route 75</a>: Dryden – TC3 dorms</p>
+      <p><a href="https://tcatbus.com/route92/" target="_blank">Route 92</a>: North Campus - West Campus - Collegetown</p>
+      <p>Driving to the Dairy Bar? Parking is available right across Tower Road in the Peterson Lot. The meter is in operation 7:30am-5pm Monday-Friday, and you can pay with cash, credit card, or the ParkMobile app. Free parking after 5pm and on weekends!</p>
+    </div>
+  </div>
+
+  <div id="hours-div" class="flex-row">
+    <div class="hours-subdiv">
+      <p id= "fall-hours-button"><a role= "button">Fall Hours</a><span id= "fallCaret">&#x25BC;</span></p>
+      <div id="fall-hours" class="hidden">
+        <p>Weekdays: 8:30am ~ 6:00pm</p>
+        <p>Weekends: closed</p>
+      </div>
+    </div>
+    <div class="hours-subdiv">
+      <p id= "spring-hours-button"><a role= "button">Spring Hours</a><span id= "springCaret">&#x25BC;</span></p>
+      <div id="spring-hours" class="hidden">
+        <p>Weekdays: 8:30am ~ 5:00pm</p>
+        <p>Weekends: closed</p>
+      </div>
+    </div>
+  </div>
+
+  <hr id="imgsrcline"/>
+  <p class="source">Map: https://www.google.com/maps/place/Cornell+Dairy+Bar/@42.4471489,-76.4729911,17z/data=!3m1!4b1!4m5!3m4!1s0x89d081f7c52ad10f:0x8ad6989773b2125!8m2!3d42.447145!4d-76.4707971</p>
+</body>
+</html>

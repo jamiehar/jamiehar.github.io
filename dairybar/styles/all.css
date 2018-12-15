@@ -1,0 +1,1075 @@
+body {
+  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  background-color: white;
+  background-image: url(../images/background.png);
+  /*personal image*/
+  background-size: 100% auto;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../styles/fonts/montserrat-regular.ttf");
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("../styles/fonts/montserrat-medium.ttf");
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../styles/fonts/montserrat-bold.ttf");
+}
+
+@font-face {
+  font-family: "MontserratItalic";
+  src: url("../styles/fonts/montserrat-italic.ttf");
+}
+
+@font-face {
+  font-family: "MontserratBoldItalic";
+  src: url("../styles/fonts/montserrat-bolditalic.ttf");
+}
+
+a {
+  text-decoration: none;
+  color: #ff9dbd;
+}
+
+a:hover {
+  color: #8cd6ff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+h1 {
+  font-family: "MontserratBold";
+  width: 100%;
+  background-color: rgba(234, 241, 247, 0.9);
+  color: #2f2f2f;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+
+/*Nav bar*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgba(31, 86, 179, 0.9);
+}
+
+.nav div {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0px;
+  flex: 2 2;
+  justify-content: center;
+}
+
+#nav-home {
+  display: inline-flex;
+  flex: 1;
+}
+
+.nav a {
+  display: inline-block;
+  width: 100%;
+  font-size: 110%;
+  color: white;
+  margin: 0px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.nav a:hover {
+  color: #8cd6ff;
+}
+
+h2 {
+  text-align: center;
+  font-family: "MontserratMedium";
+  background-color: rgba(31, 86, 179, 0.6);
+  color: white;
+  padding: 10px;
+}
+
+
+/* home page (index.html) */
+#promotion {
+  text-align: center;
+  padding: 5px;
+  background: rgba(176, 203, 255, 0.7);
+  color: white;
+}
+
+#promotion a {
+  color: #ffcfde;
+}
+
+#main-img {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  /* max-height: 330px; */ /* saved to use for site WITHOUT visible sources */
+  max-height: 380px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+#main-img img {
+  max-width: 100%;
+  max-height: 330px;
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*slideshow image*/
+#slideshowImageMobile {
+  display: none;
+}
+
+.slideshowHolder {
+  padding: 0px;
+}
+
+.slideshowButtonHolder {
+  width: 40px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slideshowNext {
+  padding: 5px;
+  color: white;
+  font-size: 200%;
+  width: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+#slideshowBefore {
+  padding: 5px;
+  color: white;
+  font-size: 200%;
+  width: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.source {
+  text-align: center;
+  font-size: 80%;
+  color: #4874be;
+  padding: 3px;
+  margin: 0px;
+}
+
+.source a {
+  color: #4874be;
+}
+
+
+#intro {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro div {
+  text-align: justify;
+  flex: 2 1;
+  padding: 30px 50px;
+  color: white;
+  line-height: 150%;
+  border-left: rgba(234, 241, 247, 0.5) solid 1px;
+  background: rgba(31, 86, 179, 0.7);
+}
+
+#intro #logo {
+  flex: 1 1;
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+  border-left: none;
+  background: none;
+  background: rgba(163, 227, 252, 0.5);
+}
+
+#intro #logo img {
+  max-width: 100%;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*customer reviews*/
+#customers {
+  display: flex;
+  flex-direction: column;
+}
+
+#customers h2 {
+  text-align: center;
+  font-family: "MontserratMedium";
+  background: rgba(234, 241, 247, 0.6);
+  padding: 10px;
+  margin: 0px;
+  color: #2f2f2f;
+}
+
+#quotes {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 5px;
+  }
+
+#quotes li {
+  display: inline-block;
+  flex: 1 1 0;
+  padding: 15px;
+  text-align: center;
+  }
+
+.quoteblock {
+  display: inline-block;
+  flex: 1 1 0;
+  padding: 15px;
+  text-align: center;
+  color: #1f56b3;
+  font-family: "MontserratItalic";
+  background-color: rgba(255, 255, 255, .9);
+  height: 70%;
+}
+
+#quotes .onequote {
+  min-height: 120px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#quotes li strong {
+  font-family: "MontserratBoldItalic";
+}
+
+/* open quotation mark */
+#quotes li span {
+  font-family: "MontserratBoldItalic";
+  font-size: 150%;
+  color: #6bb0f9;
+  padding-right: 5px;
+}
+
+/* close quotation mark */
+#quotes li .closeqt {
+  font-family: "MontserratItalic";
+  font-size: 120%;
+  padding: 0px;
+}
+
+#quotes .quotesource {
+  text-align: right;
+  color: #4b4b4b;
+  font-family: "Montserrat";
+  padding: 5px;
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 90%;
+  background: rgba(234, 241, 247, 0.6);
+}
+
+.quotesource img {
+  display: inline-flex;
+  margin: 0px 10px 0px 5px;
+  text-align: left;
+}
+
+/*styling merchandise page*/
+#merch-intro {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+  margin: 40px 0px 0px 0px;
+  background: rgba(234, 241, 247, 0.9);
+}
+
+#merch-all-pic {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+#merch-brief-intro {
+  margin-right: 10%;
+  padding-top: 7%;
+  line-height: 200%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  background: rgba(234, 241, 247, 0.9);
+  padding: 20px;
+}
+
+#clothes, #accessories, #others, #foods {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #79d3f7;
+  margin: 0;
+  padding: 5px;
+}
+
+#clothes, #accessories {
+  border-bottom: solid;
+  border-color: rgba(234, 241, 247, 0.9);
+}
+
+#clothes a, #accessories a, #others a, #foods a{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#clothes a:hover, #accessories a:hover, #others a:hover, #foods a:hover {
+  color: navy;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+#merch-intro img, .item img, #foodsmenu img {
+  width: 100%;
+  height: 100%;
+}
+
+.item img {
+  margin: 5%;
+  border: solid pink;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+#merch-all-pic img {
+  border: solid pink;
+}
+
+#downCaret1, #downCaret2, #downCaret3, #downCaret4 {
+  margin-left: 3%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#clothes-merchndise {
+  display: flex;
+  flex-direction: column;
+}
+
+#sandwich-intro {
+  text-align: center;
+  background: rgba(234, 241, 247, 0.8);
+  padding: 2%;
+}
+
+#foodsmenu {
+  display: flex;
+  flex-direction: column;
+  background: rgba(234, 241, 247, 0.8);
+}
+
+.deli {
+  text-align: center;
+  padding: 1%;
+  width: 100%;
+  background: rgba(31, 86, 179, 0.2);
+}
+
+.deli img {
+  max-width: 800px;
+}
+
+.delititle {
+  margin: 0px auto;
+  padding: 1%;
+  width: 100%;
+  background: rgba(234, 241, 247, 0.5);
+  text-align: center;
+  color: #1f56b3;
+  font-weight: bold;
+  font-family: "MontserratMedium";
+  font-size: 110%;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight: bold;
+  text-decoration: underline;
+  color: navy;
+  margin-left: 2%;
+}
+
+/* Styling Directions & Hours page */
+
+#map{
+  margin: 20px 10px;
+  margin-right: 0px;
+  align-self: center;
+}
+
+/* hover feature if not embed */
+#directions-map:hover #map {
+  filter: brightness(110%) drop-shadow(5px 5px 2px);
+}
+
+#directions-text{
+  flex-grow:1;
+  padding-left:5%;
+}
+
+#bus-routes{
+  font-weight:bolder;
+  margin-top: 50px;
+}
+
+#hours-div{
+  margin-top:50px;
+  background: none;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.hours-subdiv{
+  width:50%;
+  text-align: center;
+}
+
+#fall-hours-button, #spring-hours-button{
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(234, 241, 247, 0.6);
+  border: solid pink;
+  margin: 0px;
+  display: inline-block;
+  width:200px;
+}
+
+#fall-hours-button a, #spring-hours-button a{
+  color: black;
+  cursor: pointer;
+}
+
+#fall-hours-button a:hover, #spring-hours-button a:hover{
+  color: white;
+}
+
+#fall-hours{
+  color: white;
+}
+
+#spring-hours {
+  color: white;
+}
+
+#imgsrcline{
+  margin-top:50px;
+}
+
+#about-content{
+  width: 70%;
+  margin: 0px;
+  margin-right: 20px;
+  padding: 0px 10px 0px 0px;
+  padding-right: 0px;
+}
+
+/*tour form*/
+#tour {
+  background-color: rgba(234, 241, 247, 0.6);
+  height: 310px;
+  vertical-align: center;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+#tour h3 {
+  background: rgba(31, 86, 179, 0.6);
+  padding: 20px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+
+#tour-form {
+  padding: 20px;
+  display: inline-block;
+}
+
+#tour-form div p {
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+#tour {
+  width: 100%;
+  text-align: center;
+}
+#submit-button {
+  text-align: right;
+  margin-right: 20px;
+}
+#tour p {
+  padding: 0px 20px 20px 20px;
+}
+
+#about  {
+  display: flex;
+  flex: 1 auto;
+  flex-direction: row;
+}
+
+#name-label, #email-label {
+  display: inline-block;
+  width: 60px;
+}
+
+#name, #email-address {
+  display: inline-block;
+  width: 200px;
+}
+
+#about-content h3 {
+  margin-top: 45px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background: rgba(121, 211, 247, 0.5);
+  margin: 0px;
+}
+
+/*contact information & staff*/
+#contact-into {
+  margin-top: 20px;
+}
+
+#contact-info h3 {
+  margin-top: 45px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background: rgba(121, 211, 247, 0.5);
+  margin: 0px;
+}
+
+.staff-desc {
+  background: rgba(234, 241, 247, 0.9);
+  padding: 20px;
+  margin: 0px;
+  text-align: left;
+  padding-left: 40px;
+  display: block;
+  width: 100%;
+}
+
+#contact p {
+  text-align: center;
+  margin: 0px;
+  padding: 2px;
+}
+
+#contact p {
+  padding: 5px;
+}
+
+#staff .desc , .staff-email {
+  font-size: 80%
+}
+
+#staff strong {
+  font-size: 120%;
+}
+
+.staff-img {
+  background: rgba(234, 241, 247, 0.9);
+  padding: 20px;
+  margin: 0px;
+  width: 100px;
+  text-align: center;
+}
+
+#chloe {
+  display: flex;
+  flex: 1 auto;
+  flex-direction: row;
+}
+
+#meng {
+  display: flex;
+  flex: 1 auto;
+  flex-direction: row;
+}
+
+#contact-info h4, h5 {
+  background: rgba(234, 241, 247, 0.6);
+  padding: 20px;
+  margin: 0px;
+  color: #1f56b3;
+  font-weight: bold;
+}
+
+#staff-pic-source {
+  text-align: center;
+  font-size: 80%;
+  color: #4874be;
+  padding: 3px;
+  margin: 0px;
+}
+
+#staff {
+  margin-top: 20px;
+}
+
+#about-content h4, h5 {
+  background: rgba(234, 241, 247, 0.7);
+  padding: 20px;
+  margin: 0px;
+  color: #1f56b3;
+  font-weight: bold;
+}
+
+#contact p {
+  background: rgba(234, 241, 247, 0.9);
+  margin: 0px;
+  padding: 10px;
+}
+
+#about-content p {
+  background: rgba(234, 241, 247, 0.9);
+  padding: 20px;
+  margin: 0px;
+  text-align: justify;
+}
+
+#about-content ul {
+  background: rgba(234, 241, 247, 0.9);
+  padding: 20px;
+  margin: 0px;
+  padding-left: 40px;
+}
+
+#facilities ul li>ul {
+  background: none;
+  padding: 0px 40px;
+}
+
+#about-content>div {
+  margin-top: 20px;
+}
+
+#history {
+  margin-top: 0px !important;
+}
+
+#equipment a {
+  cursor: pointer;
+
+}
+
+#downCaretEquipment {
+  margin-left: 2%;
+  color: white;
+}
+
+.feedback {
+  color: red;
+  font-size: 60%;
+  font-style: italic;
+  padding: 0px;
+  line-height: 30%;
+}
+
+.hidden {
+  display: none;
+}
+
+#name-form, #email-form {
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+/*styling for flavors page*/
+#flavors-layout {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.flavors-row {
+  display: flex;
+  flex-direction: row;
+  border-right: solid pink 2px;
+  background: rgba(234, 241, 247, 0.9);
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.flavors-row div {
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.flavors-row p {
+  min-height: 30px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.toppings {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  text-align: left;
+  background: rgba(121, 211, 247, 0.5);
+  color: #003b9f;
+  padding: 20px 10px 20px 0px;
+}
+
+.toppings-mobile {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  flex: 1 1 0;
+}
+
+.toppings-mobile ul {
+  margin: 0px;
+}
+
+/*scoop prices*/
+#scoops {
+  display: flex;
+  flex: auto 1;
+  text-align: left;
+}
+
+#prices {
+  background: rgba(121, 211, 247, 0.5);
+  color: #003b9f;
+  padding: 5px 5px 5px 0px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 7px;
+}
+
+#prices strong {
+  font-weight: bold;
+  font-family: "MontserratMedium";
+}
+
+#scoop-name {
+  display: inline-block;
+  width: 45%;
+  text-align: right;
+  margin-right: 5%;
+}
+
+#scoop-price {
+  font-weight: bold;
+  margin-left: 5%;
+  font-weight: bold;
+  font-family: "MontserratMedium";
+}
+
+.flavor-description {
+  color: black;
+  font-size: 75%;
+  padding: 5px 30px;
+}
+
+.flavors {
+  flex-grow: 1;
+  font-weight: bold;
+  color: #1f56b3;
+  min-height: 615px;
+}
+
+.flavors h2 {
+  color: white;
+}
+
+.flavors-sidebar {
+  flex-grow: 1;
+  color: white;
+  max-width: 800px;
+}
+
+.flavors-sidebar h3 {
+  padding: 20px;
+  margin: 0px;
+  background: rgba(121, 211, 247, 0.7);
+}
+
+/*allergens*/
+#allergens {
+  background: rgba(234, 241, 247, 0.7);
+  margin: 0px;
+}
+
+#allergensImage {
+  padding: 20px;
+}
+
+/*ice cream sandwich form*/
+.bulk-orders-form {
+  background: rgba(31, 86, 179, 0.3);
+  padding: 0px;
+  min-height: 73%;
+}
+
+.bulk-orders-form h3 {
+  background: rgba(31, 86, 179, 0.5);
+}
+
+#icecream-sandwich-form label {
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+#icecream-sandwich-form input {
+  display: inline-block;
+  width: 265px;
+}
+
+#icecream-sandwich-form {
+  color: #d5e6ff;
+  padding: 20px 0px;
+}
+
+#icecream-sandwich-form div{
+  text-align: left;
+  margin: 2% 8%;
+  width: 400px;
+}
+
+#allergens-div table {
+  font-size: 50%;
+  text-align: left;
+  background-color: rgba(255,192,203,0.8);
+  color: #1f56b3;
+}
+
+#allergens-div table, th, td {
+  border-bottom: 0.5px solid #1f56b3;
+  margin: 0px;
+  padding: 2px;
+}
+
+#allergens-div p {
+ font-size: 50%;
+ text-align: left;
+ margin-left: 5px;
+}
+
+#allergens-div a {
+  cursor: pointer;
+}
+
+#downCaretFlavors {
+  margin-left: 3%;
+}
+
+/* Responsive design for mobile version */
+@media screen and (max-width: 700px) {
+
+  /*nav bar*/
+  .nav {
+    flex-direction: column;
+  }
+  .nav div {
+    flex: 1 1;
+  }
+  #nav-home {
+    display: none;
+  }
+  .nav a {
+    border: 1px white solid;
+  }
+
+  /*styling for home page*/
+  #slideshowImage {
+    display: none;
+  }
+  #slideshowImageMobile {
+    display: flex;
+  }
+  #intro {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  #intro div {
+    border-left: none;
+    height: 100%;
+  }
+  #intro #logo {
+    text-align: center;
+    border-bottom: 1px dashed #6bb0f9;
+    height: 150px;
+  }
+  #quotes {
+    flex-direction: column;
+  }
+  .quoteblock {
+    height: 50%;
+    width: 90%;
+  }
+  #quotes .onequote {
+    min-height: 50%;
+    width: 100%;
+  }
+  #quotes .quotesource {
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+  }
+
+  /*styling for about us page*/
+  #tour-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  #tour-form input {
+    width: 320px;
+    height: 20px;
+  }
+  #tour-form {
+    font-size: 120%;
+    display: inline-block;
+  }
+  #tour {
+    width: 100%;
+    text-align: center;
+  }
+  #tour p {
+    text-align: center;
+  }
+  #name-form, #email-form {
+    margin-bottom: 10px;
+  }
+
+  /*styling for merchandise page*/
+  #merch-intro {
+    flex-direction: column;
+  }
+  #merch-all-pic {
+    margin: 5% 5% 0 5%;
+  }
+  #merch-brief-intro {
+    margin: 0 5% 0 5%;
+  }
+  .flex-row {
+    flex-direction: column;
+  }
+
+  /*styling for directions & hours page*/
+  .hours-subdiv{
+    width:100%;
+    margin-top:20px;
+  }
+  #directions-map {
+    align-self: center;
+  }
+  #map {
+    margin: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  #about {
+    flex-direction: column;
+  }
+  #about-content{
+    width: 100%;
+    margin: 0px 10px;
+    align-self: center;
+  }
+  #tour {
+    margin-top: 20px;
+  }
+  #tour p {
+    margin-top: 5px;
+  }
+
+  /*styling for flavors page*/
+  #flavors-layout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .flavors-row {
+    display: flex;
+    flex-direction: row;
+    border-right: none;
+  }
+  .flavors {
+    max-height: 100%;
+    overflow: auto;
+  }
+  #icecream-sandwich-form input, select {
+    width: 200px;
+  }
+  .toppings {
+    font-size: 60%;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: left;
+  }
+  .toppings-mobile {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    flex: 1 1;
+  }
+  .toppings-mobile ul {
+    flex: 1 1 0;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cornell Dairy Bar</title>
+  <link href="styles/all.css" type="text/css" rel="stylesheet" />
+  <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="scripts/tourform-validation.js" type="text/javascript"></script>
+  <script src="scripts/show-equipment.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html"><h1>Cornell Dairy Bar</h1></a>
+    <div class="nav">
+      <div id="nav-home">
+        <a href="index.html">Home</a>
+      </div>
+      <div>
+        <a href="flavors.html">Flavors</a>
+        <a href="foodnmerch.html">Food & Merch</a>
+      </div>
+      <div>
+        <a href="directions-hours.html">Directions & Hours</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>About Us</h2>
+  <div id="about">
+    <div id="about-content">
+      <div id="history">
+        <h3>History</h3>
+          <p>Since 1880, the Cornell Dairy has been producing wholesome diary products for the campus and Ithaca communities. Made of the highest-quality milk from Cornell's own dairy cows, our rich and creamy premium ice creams are handcrafted in small batches by student apprentices and their professional mentors.</p>
+          <p>Discover for yourself why generations of Cornellians have adored our sweet selection of favorite flavors and one-of-a-kind creations. Your enjoyment of this product supports essential education and outreach programs in the Department of Food Science.</p>
+      </div>
+      <div id="facilities">
+        <h3>Facilities</h3>
+        <h4>The Dairy Processing Plant</h4>
+          <p>The Cornell Dairy Processing Plant supports the primary teaching, research and outreach missions of the Department of Food Science, the Cornell Institute of Food Science and the College of Agriculture and Life Sciences. Specifically, the Cornell Dairy contributes to undergraduate and graduate instruction in food science; to basic and applied dairy food research; to public service through extension programs; and as a designated training facility for New York State Certified Milk Inspectors and New York State Department of Agriculture and Market Inspectors. </p>
+          <p>As a by-product of its mission-based functions, the Cornell Dairy also produces milk, yogurt, juice and ice cream products to be sold on campus at Cornell University to offset the total costs incurred in the equipping and operations of the dairy plant.</p>
+        <h4 id="equipment"><a role="button">Equipment</a><span id="downCaretEquipment"></span></h4>
+        <div id="equipmentList" class = "hidden">
+          <ul>
+            <li>Two 3,000gal silos for raw milk storage</li>
+            <li>Tetra Centri cold milk separator (1,200 gal/hr)</li>
+            <li>Industrial batching system (automated or manual) including 200gal blender and three batching tanks (500, 1,000, and 1,500 gallons)</li>
+            <li>HTST System (With Homogenizer)</li>
+            <li>Tetra Plex plate heat exchanger (1,200 gal/hr)</li>
+            <li>VTetra Alex homogenizer (1,200 gal/hr; 3,000 psi two-stage)</li>
+            <li>Includes 22-second legal hold tube and 90-second extended hold tube</li>
+            <li>Three 2,000gal silos, one 1,000gal silo and one 500gal pasteurized storage tank, all jacketed with ice water cooling</li>
+            <li>Fluid Milk/Juice Filling:
+              <ul>
+                <li>Two 12-valve rotary bottle fillers (Federal) with coding and labeling capabilities</li>
+                <li>8oz (25 to 50 cpm)</li>
+                <li>Squat quart, half gallon and gallon (25 to 35 cpm)</li>
+                <li>Bag-n-Box, 1 to 5 gallon dispenser bags</li>
+              </ul>
+            </li>
+            <li>Ice cream manufacture and packaging</li>
+            <li>Yogurt manufacture and packaging</li>
+          </ul>
+        </div>
+      </div>
+      <div id="fun-facts">
+        <h3>Fun Facts</h3>
+          <ul>
+            <li>All flavors are now <a href="http://living.cornell.edu/living/explore/news/1610-dining-kosher-dairy.cfm">Kosher</a>!</li>
+            <li>Each year, students in "Science and Techonology of Foods" class compete to develop an ice cream flavor, where the winning flavor is then produced and sold at the Dairy Bar.</li>
+            <li>We offer seasonal flavors year-round.</li>
+          </ul>
+      </div>
+    </div>
+    <div id="about-sidebar">
+      <div id="tour">
+        <h3>Processing Plant Tour Request</h3>
+        <form id="tour-form" method="post" action= "https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+          <div id="name-form">
+            <label id="name-label" for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Please enter your name" required />
+            <p class="feedback hidden" id="name-feedback">Please enter your name.</p>
+          </div>
+          <div id="email-form">
+            <label id="email-label" for="email-address">Email: </label>
+            <input type="email" id="email-address" name="email-address" placeholder="Please enter your email" required />
+            <p class="feedback hidden" id="email-feedback">Please enter a valid email.</p>
+          </div>
+          <div id="submit-button">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <p>We will send you further details about a tour!</p>
+      </div>
+      <div id="contact-info">
+        <h3>Contact Info</h3>
+        <div id="contact">
+          <p id="contact-tel">tel: (607) 255-7660</p>
+          <p id="contact-email">email: <a href="mailto:dairybar@cornell.edu">dairybar@cornell.edu</a></p>
+        </div>
+        <div id="staff">
+          <h4>Staff</h4>
+          <div id = "chloe">
+            <div class = "staff-img">
+              <p class = "staff-img"><img src="images/chloe-greenhalgh.png" alt="Chloe Greenhalgh" /></p>
+              <!-- Source: http://living.cornell.edu/dine/wheretoeat/cafescoffeehouses/cornelldairybar.cfm -->
+            </div>
+            <div class = "staff-desc">
+              <p><strong>Chloe Greenhalgh</strong></p>
+              <p class="desc">Chef, Ag Quad</p>
+              <p class = "staff-email"><a href="mailto:cng28@cornell.edu">cng28@cornell.edu</a></p>
+            </div>
+          </div>
+          <div id = "meng">
+            <div class = "staff-img">
+              <p class = "staff-img"><img src="images/Meng-Wei-Hsu.png" alt="Meng-Wei Hsu" /></p>
+              <!-- Source: http://living.cornell.edu/dine/wheretoeat/cafescoffeehouses/cornelldairybar.cfm -->
+            </div>
+            <div class = "staff-desc">
+              <p><strong>Meng-Wei Hsu</strong></p>
+              <p class="desc">Senior Operations Manager, Ag Quad & Coffee Shops</p>
+              <p class = "staff-email"><a href="mailto:mh873@cornell.edu">mh873@cornell.edu</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="staff-pic-source">Source: Cornell University</p>
+    </div>
+  </div>
+
+</body>
+</html>
