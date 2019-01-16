@@ -169,6 +169,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .samples {
+    display: flex;
     flex-direction: column;
   }
   #last-sample {
